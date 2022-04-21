@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type Conversions</title>
+</head>
+<body>
+  <script>
+    //String Conversion
+    let value = true; // boolean
+    toStr = String(value); // becomes string
+
+    //Numeric Conversion
+    let no = "123"; // string
+    num = Number(no); // becomes number
+
+    //Numeric conversion Rules
+    // Number("   123    "); Don't count white spae
+    // 123
+
+    // Number("123z"); Undefined return NaN
+    // NaN
+
+    // Number(null); null return 0
+    // 0
+
+    // Number(true); boolean true return 1 & false return 0
+    // 1
+
+    //Boolean Conversion
+    // 0, null, undefined, NaN, "" return false
+    // any other value return true
+    // "0" and " " are true as boolean, Empty Values = False
+  </script>
+</body>
+</html>
